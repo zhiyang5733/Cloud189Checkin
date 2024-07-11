@@ -7,44 +7,44 @@
 类型: 出发
 工作流_调度:
 日程安排:
-    - 时间单位: 35 8 * * *
+    - 时间单位: 35 1 * * *
 工作:
 构建和部署:
 连续运行: Ubuntu-最新版
 环境: 用户
 步伐:
       - 使用: 动作/签出@v3
-      - 名字: 设置Node.js环境
+      - 名字: 设置节点. js环境
 使用: 动作/设置-节点@v3
 随着:
 节点版本: 14
       - 名字: 初始化
 奔跑: npm安装
       - 名字: 奔跑
-身份证明（identification）: 奔跑
+身份证明(识别): 奔跑
 使用: 尼克-菲尔兹/重试@v2
-包封/包围（动词envelop的简写）:
-TY _用户名: ${{秘密。TY _用户名}}
-TY _密码: ${{秘密。TY _密码}}
-TY_USER_NAME1: ${{秘密。TY_USER_NAME1}}
-TY_PASSWORD1: ${{秘密。TY_PASSWORD1}}
-TY_USER_NAME2: ${{秘密。TY_USER_NAME2}}
-TY_PASSWORD2: ${{秘密。TY_PASSWORD2}}
-TY_USER_NAME3: ${{秘密。TY_USER_NAME3}}
-TY_PASSWORD3: ${{秘密。TY_PASSWORD3}}
-TY_USER_NAME4: ${{秘密。TY_USER_NAME4}}
-TY_PASSWORD4: ${{秘密。TY_PASSWORD4}}
+包封/包围（动词包围的简写):
+TY _用户名: ${{秘密100 . TY _用户名}}
+TY _密码: ${{秘密100 . TY _密码}}
+TY_USER_NAME1: ${{秘密TY_USER_NAME1}}
+TY_PASSWORD1: ${{秘密TY_PASSWORD1}}
+TY_USER_NAME2: ${{秘密TY_USER_NAME2}}
+TY_PASSWORD2: ${{秘密TY_PASSWORD2}}
+TY_USER_NAME3: ${{秘密TY_USER_NAME3}}
+TY_PASSWORD3: ${{秘密TY_PASSWORD3}}
+TY_USER_NAME4: ${{秘密TY_USER_NAME4}}
+TY_PASSWORD4: ${{秘密TY_PASSWORD4}}
           #服务器
 发送键: ${{秘密。发送键}}
           #电报
 电报_机器人_令牌: ${{秘密。电报_机器人_令牌}}
 电报_聊天_ID: ${{秘密。电报_聊天_ID}}
           # WecomBot
-WECOM_BOT_KEY: ${{秘密。WECOM_BOT_KEY}}
+WECOM_BOT_KEY: ${{秘密. WECOM_BOT_KEY}}
 网络电话: ${{秘密。网络电话}}
           # WxPusher
-WX _推动器_应用程序_令牌: ${{秘密。WX _推动器_应用程序_令牌}}
-WX_PUSHER_UID: ${{秘密。WX_PUSHER_UID}}
+WX _推动器_应用程序_令牌: ${{秘密WX _推动器_应用程序_令牌}}
+WX_PUSHER_UID: ${{秘密WX_PUSHER_UID}}
 随着:
 超时_分钟: 10
 最大尝试次数: 3
